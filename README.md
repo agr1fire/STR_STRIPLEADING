@@ -1,0 +1,2 @@
+# STR_STRIPLEADING
+Local $sVal = "" ; Check that the condition supplied was a valid condition (i.e., $sVar = "String") If (UBound($aSplit) = 2) Then ; Get the var name, removing the '$' character so it can be used in Eval() ; and removing the trailing and leading spaces $sVar = StringReplace(StringStripWS($aSplit[0], $STR_STRIPLEADING + $STR_STRIPTRAILING), "$", "") ; Check that the variable is declared, if not return an error
